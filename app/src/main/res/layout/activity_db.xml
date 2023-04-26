@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.db.DbActivity">
+
+    <Button
+        android:id="@+id/goBackButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:background="@color/white"
+        android:text="Back" />
+
+    <TextView
+        android:id="@+id/text_view_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="110dp"
+        android:fontFamily="sans-serif-black"
+        android:text="ORDER"
+        android:textSize="18sp"/>
+
+    <TableLayout
+        android:id="@+id/orderTable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="140dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="id"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:paddingVertical="10dp"
+                android:paddingHorizontal="5dp"/>
+
+            <TextView
+                android:text="created_at"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:paddingVertical="10dp"
+                android:paddingHorizontal="5dp"/>
+
+            <TextView
+                android:text="name"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:paddingVertical="10dp"
+                android:paddingHorizontal="5dp"/>
+
+            <TextView
+                android:text="size_weight_cost_option"
+                android:layout_width="100dp"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:paddingVertical="10dp"
+                android:paddingHorizontal="5dp"/>
+
+            <TextView
+                android:text="addition_cost_options"
+                android:layout_width="100dp"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:paddingVertical="10dp"
+                android:paddingHorizontal="5dp"/>
+
+        </TableRow>
+
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/emptyDbMessage"
+        android:layout_width="160dp"
+        android:visibility="invisible"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:text="There are no any records."/>
+
+</RelativeLayout>
